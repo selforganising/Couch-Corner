@@ -1,0 +1,83 @@
+My code for the solutions in Chapter 2 of Eloquent Javascript.
+Ex. 1
+
+var hashtag = "#"
+for (var i = 0; i<7;i++){
+  console.log(hashtag);
+  console.log("\n"); 
+  hashtag = hashtag +"#"
+}
+
+Ex. 2
+
+for (var i = 1;i<101;i++){
+  if(i % 3 === 0 && i % 5 === 0) {
+  	console.log("FizzBuzz");
+    }
+  else if(i % 3 === 0) {
+   	console.log("Fizz"); 
+  }
+  else if(i % 5 === 0) {
+   	console.log("Buzz"); 
+  }
+  else{
+   console.log(i); 
+  }
+};
+
+Ex. 3
+TRY 1
+
+var size = 8
+for(var i = 1;i<size;i++){
+  if(i % 2 === 0){
+   console.log("# # # # ");
+  }
+  else {
+   console.log(" # # # #");
+  }
+  
+ console.log("\n");
+  
+}
+
+TRY 2
+
+var size = 8
+var chess = ""
+for(var i = 1;i<size;i++){
+  
+  for(var j = 1;j<size;j++)  
+  if( (i+j) % 2 === 0){
+    
+    console.log(chess += " ");
+    }
+  else {
+     console.log(chess += "#");
+    }
+  
+  console.log(chess += "\n")
+  
+}
+
+TRY 3
+
+var size = 8
+var chess = ""
+for(var i = 1;i<size;i++){
+  
+  for(var j = 1;j<size;j++)  
+  if( (i+j) % 2 === 0){
+    
+    chess += " ";
+    }
+  else {
+     chess += "#";
+    }
+  
+  chess += "\n";
+  
+}
+
+console.log(chess);
+
